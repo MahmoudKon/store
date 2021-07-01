@@ -119,11 +119,10 @@ class UserController extends Controller
         $user->delete();
         session()->flash('success', __('site.deleted_successfully'));
         return redirect()->back();
-
     } //end of destroy
 
 
-// Make Block
+    // Make Block
 
     public function deleted(Request $request)
     {
